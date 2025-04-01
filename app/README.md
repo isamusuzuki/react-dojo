@@ -22,7 +22,9 @@
 --app/
   |--src/
   |  |--components/
+  |  |  |--ForFilter.tsx  ... P103 3-2-1 リストを絞り込む
   |  |  |--ForList.tsx    ... P096 3-2-1 配列をリスト化する
+  |  |  |--ForSort.tsx    ... P104 3-2-1 リストをソートする 
   |  |  |--MyHello.tsx    ... P084 3-1-2 Propsの基本
   |  |  `--StateBasic.tsx ... P089 3-1-4 Stateの基本
   |  |--App.tsx
