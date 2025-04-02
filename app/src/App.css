@@ -1,0 +1,7 @@
+.rect {
+    margin: 1em;
+    padding: 2em;
+    border: gray solid 1px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}

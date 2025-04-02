@@ -15,11 +15,11 @@ function App() {
     return (
         <>
             <h1>React道場</h1>
+            <ForList books={books1} />
+            <ForSort books={books2} />
+            <ForFilter books={books3} />
             <MyHello myName="太郎" />
             <StateBasic init={0} />
-            <ForList books={books3} />
-            <ForSort books={books2} />
-            <ForFilter books={books1} />
         </>
     )
 }

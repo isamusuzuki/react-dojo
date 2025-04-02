@@ -5,16 +5,16 @@ type Props = {
 }
 
 export default function StateBasic(props: Props) {
-    const [count, setCount] = useState(props.init)
+    const [count, setCount] = useState<number>(props.init)
 
     const handleClick = () => {
         setCount(count + 1)
     }
 
     return (
-        <>
+        <div className='rect'>
             <button onClick={handleClick}>カウント</button>
             <p>{count}回、クリックされました</p>
-        </>
+        </div>
     )
 }
