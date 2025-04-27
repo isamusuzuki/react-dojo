@@ -12,8 +12,10 @@ export default function StateBasic(props: Props) {
     }
 
     return (
-        <div className='rect'>
-            <button onClick={handleClick}>カウント</button>
+        <div className='m-2 p-5 rounded bg-gray-100'>
+            <button
+                className='m-1 bg-blue-500 text-white px-5 py-2 rounded-md' 
+                onClick={handleClick}>カウント</button>
             <p>{count}回、クリックされました</p>
         </div>
     )

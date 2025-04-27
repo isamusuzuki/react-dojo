@@ -5,7 +5,6 @@ import ForSort from './components/ForSort'
 import MyHello from './components/MyHello'
 import StateBasic from './components/StateBasic'
 import StateParent from './components/StateParent'
-import './App.css'
 
 // リストをスプレッド構文でコピーしてから使う
 const books1 = [...Books]
@@ -15,7 +14,7 @@ const books3 = [...Books]
 function App() {
     return (
         <>
-            <h1>React道場</h1>
+            <h1 className='m-3 p-2 text-3xl font-bold underline'>React道場</h1>
             <StateParent />
             <ForList books={books1} />
             <ForSort books={books2} />

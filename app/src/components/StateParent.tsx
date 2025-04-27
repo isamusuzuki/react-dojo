@@ -9,11 +9,11 @@ export default function StateParent() {
     }
 
     return (
-        <>
+        <div className='m-2 p-5 rounded bg-gray-100'>
             <p>総カウント： {count}</p>
             <StateCounter step={1} onUpdate={update} />
             <StateCounter step={5} onUpdate={update} />
-            <StateCounter step={10} onUpdate={update} />
-        </>
+            <StateCounter step={-2} onUpdate={update} />
+        </div>
     )
 }
