@@ -21,9 +21,9 @@ function App() {
             </div>
             <div className="col-span-3 col-start-1">
                 <StateForm />
-                <StateFormUC />
             </div>
             <div className="col-span-3 col-start-4">
+                <StateFormUC />
                 <StateParent />
                 <MyHello myName="万太郎" />
                 <StateBasic init={0} />
