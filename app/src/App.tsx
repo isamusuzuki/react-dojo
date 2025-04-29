@@ -7,6 +7,7 @@ import StateBasic from './components/StateBasic'
 import StateForm from './components/StateForm'
 import StateFormUC from './components/StateFormUC'
 import StateParent from './components/StateParent'
+import StateTodo from './components/StateTodo'
 
 // リストをスプレッド構文でコピーしてから使う
 const books1 = [...Books]
@@ -20,6 +21,7 @@ function App() {
                 <h1 className='m-3 p-2 text-3xl font-bold underline text-center'>React道場</h1>
             </div>
             <div className="col-span-3 col-start-1">
+                <StateTodo />
                 <StateForm />
             </div>
             <div className="col-span-3 col-start-4">
@@ -33,7 +35,6 @@ function App() {
                 <ForSort books={books2} />
                 <ForFilter books={books3} />
             </div>
-
         </div>
     )
 }
