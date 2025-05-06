@@ -1,19 +1,7 @@
-// import Books from './input/books'
-// import ForFilter from './components/ForFilter'
-// import ForList from './components/ForList'
-// import ForSort from './components/ForSort'
-// import MyHello from './components/MyHello'
-// import StateBasic from './components/StateBasic'
 import FormBasic from './components/FormBasic'
+import FormYup from './components/FormYup'
 import StateForm from './components/StateForm'
-// import StateFormUC from './components/StateFormUC'
-// import StateParent from './components/StateParent'
 import StateTodo from './components/StateTodo'
-
-// リストをスプレッド構文でコピーしてから使う
-// const books1 = [...Books]
-// const books2 = [...Books]
-// const books3 = [...Books]
 
 function App() {
     return (
@@ -22,21 +10,16 @@ function App() {
                 <h1 className='m-3 p-2 text-3xl font-bold underline text-center'>React道場</h1>
             </div>
             <div className="col-span-3 col-start-1">
-                <FormBasic />
+                <FormYup />
             </div>
             <div className="col-span-3 col-start-4">
+                <FormBasic />
+            </div>
+            <div className="col-span-6">
                 <StateTodo />
                 <StateForm />
-                {/* <StateFormUC />
-                <StateParent />
-                <MyHello myName="万太郎" />
-                <StateBasic init={0} /> */}
             </div>
-            {/* <div className="col-span-6">
-                <ForList books={books1} />
-                <ForSort books={books2} />
-                <ForFilter books={books3} />
-            </div> */}
+
         </div>
     )
 }
