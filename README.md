@@ -9,8 +9,8 @@ React道場
 ```text
 --react-dojo/
     |--.devcontainer/ ... 開発コンテナの設定
-    `--avocado/       ... Cloudflare > vite-react-template
+    `--avocado/  ... Cloudflare > vite-react-template
+    `--banana/   ... Vite > React > TypeScript
 ```
 
 [『これからはじめるReact実践入門』を写経する](SHAKYO.md)
-
