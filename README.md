@@ -10,8 +10,10 @@ React道場
 --react-dojo/
     |--.devcontainer/ ... 開発コンテナの設定
     |--avocado/  ... Cloudflare > vite-react-template
-    `--banana/   ... Vite > React > TypeScript
+    `--banana/   ... Vite > React + TypeScript
 ```
 
-- avocado => [『これからはじめるReact実践入門』を写経する](SHAKYO.md)
+## 2. 勉強テーマ
+
+- avocado => [『これからはじめるReact実践入門』を写経する](./avocado/SHAKYO.md)
 - banana => ReactHooks入門を写経する
