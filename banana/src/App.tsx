@@ -1,21 +1,20 @@
-import { useEffect, useState } from 'react';
 import './App.css';
+import useLocalStorage from './useLocalStorage';
 
 function App() {
-    const [count, setCount] = useState(0);
+    const [age, setAge] = useLocalStorage('age', 24);
 
-    const handleClick = () => {
-        setCount(count + 1);
-    };
-
-    useEffect(() => {
-        console.log('Hello, Hooks');
-    }, []);
     return (
         <>
-            <h1>UseState, UseEffect</h1>
-            <button onClick={handleClick}>+</button>
-            <p>{count}</p>
+            <h1>カスタムフック</h1>
+            <div>{age}</div>
+            <button
+                onClick={() => {
+                    setAge(80);
+                }}
+            >
+                年齢をセット
+            </button>
         </>
     );
 }
