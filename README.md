@@ -16,6 +16,6 @@ React道場
 
 ## 2. 勉強テーマ
 
-- avocado => [『これからはじめるReact実践入門』を写経する](./avocado/SHAKYO.md)
-- banana => ReactHooks入門を写経する
-- coconut => Next.jsを触ってみる
+- avocado ... [『これからはじめるReact実践入門』を写経する](./avocado/SHAKYO.md)
+- banana  ... ReactHooks入門を写経する
+- coconut ... Next.jsを触ってみる

@@ -10,9 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN sed -i -E 's/# (ja_JP.UTF-8)/\1/' /etc/locale.gen \
   && locale-gen \
   && update-locale LANG=ja_JP.UTF-8
-ENV LANG ja_JP.UTF-8
-ENV LANGUAGE ja_JP:ja
-ENV LC_ALL ja_JP.UTF-8
+ENV LANG=ja_JP.UTF-8 LANGUAGE=ja_JP:ja LC_ALL=ja_JP.UTF-8
 
 # タイムゾーンをJSTに変更する
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
