@@ -8,7 +8,9 @@
             "extensions": [
                 "dbaeumer.vscode-eslint",
                 "editorconfig.editorconfig",
-                "esbenp.prettier-vscode"
+                "esbenp.prettier-vscode",
+                "davidanson.vscode-markdownlint",
+                "yzhang.markdown-all-in-one"
             ],
             "settings": {
                 "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -19,6 +21,20 @@
                 },
                 "files.associations": {
                     "wrangler.json": "jsonc"
+                },
+                "[markdown]": {
+                    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll.markdownlint": "explicit"
+                    }
+                },
+                "markdownlint.config": {
+                    "MD033": {
+                        "allowed_elements": [
+                            "br",
+                            "img"
+                        ]
+                    }
                 }
             }
         }
