@@ -1,16 +1,8 @@
-FROM node:22-bookworm-slim
+FROM node:24-trixie-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
-    locales \
-    postgresql-client \
     && rm -rf /var/lib/apt/lists/*
-
-# ロケールをja_JP.UTF-8に変更する
-RUN sed -i -E 's/# (ja_JP.UTF-8)/\1/' /etc/locale.gen \
-  && locale-gen \
-  && update-locale LANG=ja_JP.UTF-8
-ENV LANG=ja_JP.UTF-8 LANGUAGE=ja_JP:ja LC_ALL=ja_JP.UTF-8
 
 # タイムゾーンをJSTに変更する
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
