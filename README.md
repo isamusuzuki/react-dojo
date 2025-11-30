@@ -17,5 +17,5 @@ React道場
 ## 2. 勉強テーマ
 
 - avocado ... [『これからはじめる React 実践入門』を写経する](./avocado/SHAKYO.md)
-- banana ... ReactHooks入門を写経する
-- coconut ... Vitest + React写経
+- banana  ... ReactHooks入門を写経する
+- carrot  ... Vitest+React写経
